@@ -1,4 +1,12 @@
 :root {
-    --light-primary: #ff6b6b;
-    --light-primary-hover: #ff4d4f;
+    --light-primary: rgb(250, 224, 224);
+    --light-border-primary: rgb(235, 150, 150);
+    --light-primary-hover: #f37676;
+    --bg-linear-start: #686565;
+    --bg-linear-end: #cc7878;
+    --dashboard-font-size: 12px;
+    --dashboard-font-size-bottom: 20px;
+    --dashboard-font-weight-bold: bold;
+    --dashboard-font-color: #fff;
+    --dashboard-border-radius: 10px;
 }

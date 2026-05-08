@@ -4,10 +4,10 @@
     <nav class="money__nav">
       <ul>
         <li>
-          <nuxt-link to="/spend">花费</nuxt-link>
+          <nuxt-link to="/record-spend">记录花费</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/allMoney">总额</nuxt-link>
+          <nuxt-link to="/update-money">修改存储金额</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -15,11 +15,18 @@
 </template>
 
 <style lang="scss">
-
+@import '~/assets/css/layout.scss';
 .money__header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    h1 {
+        font-size: 24px;
+        font-weight: var(--dashboard-font-weight-bold);
+        color: var(--dashboard-font-color);
+    }
 }
 .money__nav {
   ul {
@@ -29,17 +36,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 
     li {
-        a {
-            color: var(--light-primary);
-            text-decoration: none;
-
-            &:hover {
-                color: var(--light-primary-hover);
-            }
-        }
+        @include aStyle();
     }
   }
 }
